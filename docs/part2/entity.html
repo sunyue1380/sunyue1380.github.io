@@ -1,0 +1,601 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>实体扫描与过滤 · QuickDAO中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sunyue">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="foreignkey.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/sunyue1380/QuickDAO" target="_blank" class="custom-link">GitHub主页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part1/guide.html">
+            
+                <a href="../part1/guide.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    配置信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="entity.html">
+            
+                <a href="entity.html">
+            
+                    
+                    实体扫描与过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="foreignkey.html">
+            
+                <a href="foreignkey.html">
+            
+                    
+                    外键约束与自动建表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    实体注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../part3/">
+            
+                <a href="../part3/">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../part3/simpleQuery.html">
+            
+                <a href="../part3/simpleQuery.html">
+            
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../part3/compositQuery.html">
+            
+                <a href="../part3/compositQuery.html">
+            
+                    
+                    复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/jointable.html">
+            
+                <a href="../part3/jointable.html">
+            
+                    
+                    外键查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../part3/groupby.html">
+            
+                <a href="../part3/groupby.html">
+            
+                    
+                    聚合查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../part3/partQuery.html">
+            
+                <a href="../part3/partQuery.html">
+            
+                    
+                    部分查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../part3/orderby.html">
+            
+                <a href="../part3/orderby.html">
+            
+                    
+                    排序分页
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../part3/result.html">
+            
+                <a href="../part3/result.html">
+            
+                    
+                    返回结果
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../part3/customQuery.html">
+            
+                <a href="../part3/customQuery.html">
+            
+                    
+                    自定义查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../part3/clone.html">
+            
+                <a href="../part3/clone.html">
+            
+                    
+                    克隆
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../part4/">
+            
+                <a href="../part4/">
+            
+                    
+                    更新操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../part4/save.html">
+            
+                <a href="../part4/save.html">
+            
+                    
+                    插入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../part4/update.html">
+            
+                <a href="../part4/update.html">
+            
+                    
+                    更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../part4/delete.html">
+            
+                <a href="../part4/delete.html">
+            
+                    
+                    删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../part5/">
+            
+                <a href="../part5/">
+            
+                    
+                    事务操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../part5/transcation.html">
+            
+                <a href="../part5/transcation.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >实体扫描与过滤</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x626B;&#x63CF;&#x4E0E;&#x8FC7;&#x6EE4;">&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x626B;&#x63CF;&#x4E0E;&#x8FC7;&#x6EE4;</h1>
+<h2 id="&#x626B;&#x63CF;">&#x626B;&#x63CF;</h2>
+<p>QuickDAO&#x5141;&#x8BB8;&#x60A8;&#x8BBE;&#x5B9A;&#x5B9E;&#x4F53;&#x7C7B;&#x6240;&#x5728;&#x5305;&#x540D;,QuickDAO&#x4F1A;&#x626B;&#x63CF;&#x60A8;&#x6240;&#x8BBE;&#x5B9A;&#x7684;&#x5305;&#x540D;&#x5E76;&#x63D0;&#x53D6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x4EE5;&#x4F9B;&#x540E;&#x9762;&#x4F7F;&#x7528;.
+<code>QuickDAO.newInstance().packageName(&quot;cn.schoolwow.quickdao.entity)</code></p>
+<p>&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x4F1A;&#x626B;&#x63CF;cn.scholwow.quickdao.entity&#x8FD9;&#x4E2A;&#x5305;,&#x5E76;&#x5728;&#x6570;&#x636E;&#x5E93;&#x91CC;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x8868;.&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#x91C7;&#x7528;&#x4E0B;&#x5212;&#x7EBF;&#x547D;&#x4EE4;,&#x4F1A;&#x5C06;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x9A7C;&#x5CF0;&#x5F0F;&#x547D;&#x540D;&#x8F6C;&#x6362;.&#x5B9E;&#x4F53;&#x5305;&#x4E0B;&#x9762;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x5EFA;&#x7ACB;&#x5305;,&#x751F;&#x6210;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#x4F1A;&#x4EE5;@&#x7B26;&#x53F7;&#x4F5C;&#x4E3A;&#x5206;&#x9694;.
+&#x4F8B;&#x5982;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x5B9E;&#x4F53;&#x7C7B;&#x5305;</p>
+<pre><code>/User.java
+/UserTalk.java
+/user/User.java
+/user/UserTalk.java
+</code></pre><table>
+<thead>
+<tr>
+<th>&#x7C7B;</th>
+<th>&#x8868;&#x540D;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User.java</td>
+<td>user</td>
+<td></td>
+</tr>
+<tr>
+<td>UserTalk.java</td>
+<td>user_talk</td>
+<td>&#x9A7C;&#x5CF0;&#x5F0F;&#x6539;&#x6210;&#x4E0B;&#x5212;&#x7EBF;</td>
+</tr>
+<tr>
+<td>/user/User.java</td>
+<td>user@user</td>
+<td>&#x5C06;&#x6587;&#x4EF6;&#x5939;&#x548C;&#x7C7B;&#x540D;&#x7528;@&#x5206;&#x9694;</td>
+</tr>
+<tr>
+<td>/user/UserTalk.java</td>
+<td>user@user_talk</td>
+<td>&#x5C06;&#x6587;&#x4EF6;&#x5939;&#x548C;&#x7C7B;&#x540D;&#x7528;@&#x5206;&#x9694;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x522B;&#x540D;">&#x522B;&#x540D;</h2>
+<p>&#x5F53;&#x9700;&#x8981;&#x626B;&#x63CF;&#x591A;&#x4E2A;&#x5B9E;&#x4F53;&#x7C7B;&#x5305;&#x65F6;,&#x60A8;&#x53EF;&#x4EE5;&#x8BBE;&#x5B9A;&#x522B;&#x540D;.
+<code>QuickDAO.newInstance().packageName(&quot;cn.schoolwow.quickdao.entity&quot;,&quot;t&quot;)</code>
+&#x4EE5;&#x4E0A;&#x4EE3;&#x7801;&#x5728;&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x5305;&#x65F6;,&#x4F1A;&#x5728;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#x524D;&#x6DFB;&#x52A0;<code>t_</code>&#x524D;&#x7F00;.</p>
+<h2 id="&#x8FC7;&#x6EE4;">&#x8FC7;&#x6EE4;</h2>
+<p>&#x5728;&#x67D0;&#x4E9B;&#x60C5;&#x51B5;&#x4E0B;,&#x60A8;&#x53EF;&#x80FD;&#x5E76;&#x4E0D;&#x60F3;&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x5305;&#x4E0B;&#x7684;&#x67D0;&#x4E2A;&#x7C7B;(&#x5B83;&#x53EF;&#x80FD;&#x7528;&#x4E8E;&#x5176;&#x4ED6;&#x7528;&#x9014;),&#x6B64;&#x65F6;&#x60A8;&#x4FBF;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x8FC7;&#x6EE4;&#x65B9;&#x6CD5;&#x6392;&#x9664;&#x4E0D;&#x9700;&#x8981;&#x5EFA;&#x7ACB;&#x6570;&#x636E;&#x5E93;&#x8868;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;.API&#x65B9;&#x6CD5;&#x5982;&#x4E0B;:</p>
+<table>
+<thead>
+<tr>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ignorePackageName</td>
+<td>&#x8FC7;&#x6EE4;&#x5305;&#x540D;</td>
+</tr>
+<tr>
+<td>ignoreClass</td>
+<td>&#x8FC7;&#x6EE4;&#x67D0;&#x4E2A;&#x7C7B;</td>
+</tr>
+<tr>
+<td>filter(Predicate<class> predicate)</class></td>
+<td>&#x4F7F;&#x7528;Predicate&#x8868;&#x8FBE;&#x5F0F;&#x8FC7;&#x6EE4;&#x5B9E;&#x4F53;&#x7C7B;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5F53;&#x60A8;&#x8C03;&#x7528;&#x4EE5;&#x4E0A;API&#x540E;,QuickDAO&#x4F1A;&#x5FFD;&#x7565;&#x8FD9;&#x4E9B;&#x7C7B;,&#x4E0D;&#x4F1A;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x8868;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 配置信息">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="foreignkey.html" class="navigation navigation-next " aria-label="Next page: 外键约束与自动建表">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实体扫描与过滤","level":"1.3.1","depth":2,"next":{"title":"外键约束与自动建表","level":"1.3.2","depth":2,"path":"part2/foreignkey.md","ref":"part2/foreignkey.md","articles":[]},"previous":{"title":"配置信息","level":"1.3","depth":1,"path":"part2/README.md","ref":"part2/README.md","articles":[{"title":"实体扫描与过滤","level":"1.3.1","depth":2,"path":"part2/entity.md","ref":"part2/entity.md","articles":[]},{"title":"外键约束与自动建表","level":"1.3.2","depth":2,"path":"part2/foreignkey.md","ref":"part2/foreignkey.md","articles":[]},{"title":"实体注解","level":"1.3.3","depth":2,"path":"part2/annotation.md","ref":"part2/annotation.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/sunyue1380/QuickDAO"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sunyue","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"QuickDAO中文文档","language":"zh-hans","links":{"sidebar":{"GitHub主页":"https://github.com/sunyue1380/QuickDAO"}},"gitbook":"3.2.3","description":"QuickDAO是一款简单,易用,轻量级的java ORM框架."},"file":{"path":"part2/entity.md","mtime":"2019-07-09T06:53:56.290Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-07-09T07:51:31.522Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
