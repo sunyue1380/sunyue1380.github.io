@@ -1,0 +1,594 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>实体扫描 · QuickDAO3项目文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sunyue1380">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dynamicAnnotation.html" />
+    
+    
+    <link rel="prev" href="annotation.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart/README.md">
+            
+                <span>
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quickstart/start.html">
+            
+                <a href="../quickstart/start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    配置信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    SQL日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    实体注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="scan.html">
+            
+                <a href="scan.html">
+            
+                    
+                    实体扫描
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="dynamicAnnotation.html">
+            
+                <a href="dynamicAnnotation.html">
+            
+                    
+                    动态配置实体注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="tableNameMapping.html">
+            
+                <a href="tableNameMapping.html">
+            
+                    
+                    实体类名映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../select/">
+            
+                <a href="../select/">
+            
+                    
+                    查询操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../select/simple.html">
+            
+                <a href="../select/simple.html">
+            
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../select/complex.html">
+            
+                <a href="../select/complex.html">
+            
+                    
+                    复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../select/special.html">
+            
+                <a href="../select/special.html">
+            
+                    
+                    特殊查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../select/joinTable.html">
+            
+                <a href="../select/joinTable.html">
+            
+                    
+                    关联查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../select/page.html">
+            
+                <a href="../select/page.html">
+            
+                    
+                    分页排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../operate/">
+            
+                <a href="../operate/">
+            
+                    
+                    更新操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../operate/simple.html">
+            
+                <a href="../operate/simple.html">
+            
+                    
+                    简单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../operate/batch.html">
+            
+                <a href="../operate/batch.html">
+            
+                    
+                    批量操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../operate/buildTable.html">
+            
+                <a href="../operate/buildTable.html">
+            
+                    
+                    建表删表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../transaction/">
+            
+                <a href="../transaction/">
+            
+                    
+                    事务操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../transaction/transaction.html">
+            
+                <a href="../transaction/transaction.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >实体扫描</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B9E;&#x4F53;&#x626B;&#x63CF;">&#x5B9E;&#x4F53;&#x626B;&#x63CF;</h1>
+<p>QuickDAO&#x63D0;&#x4F9B;&#x4E86;&#x81EA;&#x52A8;&#x5EFA;&#x8868;&#x529F;&#x80FD;,&#x80FD;&#x591F;&#x6839;&#x636E;&#x60A8;&#x914D;&#x7F6E;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;&#x5305;&#x540D;&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x7C7B;&#x5E76;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x8868;.</p>
+<h2 id="&#x6837;&#x4F8B;">&#x6837;&#x4F8B;</h2>
+<pre><code class="lang-java">BasicDataSource mysqlDataSource = <span class="hljs-keyword">new</span> BasicDataSource();
+mysqlDataSource.setDriverClassName(<span class="hljs-string">&quot;com.mysql.jdbc.Driver&quot;</span>);
+mysqlDataSource.setUrl(<span class="hljs-string">&quot;jdbc:mysql://127.0.0.1:3306/quickdao&quot;</span>);
+mysqlDataSource.setUsername(<span class="hljs-string">&quot;root&quot;</span>);
+mysqlDataSource.setPassword(<span class="hljs-string">&quot;123456&quot;</span>);
+<span class="hljs-comment">//&#x6307;&#x5B9A;&#x5B9E;&#x4F53;&#x6240;&#x5728;&#x5305;&#x540D;</span>
+cn.schoolwow.quickdao.dao.DAO dao = QuickDAO.newInstance()
+                    .dataSource(mysqlDataSource)
+                    .packageName(<span class="hljs-string">&quot;cn.schoolwow.quickdao.entity&quot;</span>)
+                    .build();
+</code></pre>
+<h2 id="&#x6570;&#x636E;&#x6E90;">&#x6570;&#x636E;&#x6E90;</h2>
+<p>QuickDAO&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x5168;&#x90E8;&#x57FA;&#x4E8E;DataSource,&#x60A8;&#x9700;&#x8981;&#x4F20;&#x9012;&#x7ED9;QuickDAO&#x4E00;&#x4E2A;DataSource&#x5BF9;&#x8C61;&#x4EE5;&#x4FBF;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;.
+&#x60A8;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4EFB;&#x4F55;&#x5B9E;&#x73B0;&#x4E86;DataSource&#x63A5;&#x53E3;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDE;&#x63A5;&#x6C60;&#x6846;&#x67B6;,&#x4F8B;&#x5982;dbcp,c3p0,druid&#x7B49;&#x7B49;.
+&#x4F8B;&#x5982;&#x5BFC;&#x5165;dbcp, &#x60A8;&#x9700;&#x8981;&#x5728;pom.xml&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>commons-dbcp<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>commons-dbcp<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>1.4<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span>
+</code></pre>
+<p>&#x914D;&#x7F6E;&#x6570;&#x636E;&#x6E90;</p>
+<pre><code class="lang-java">BasicDataSource mysqlDataSource = <span class="hljs-keyword">new</span> BasicDataSource();
+mysqlDataSource.setDriverClassName(<span class="hljs-string">&quot;com.mysql.jdbc.Driver&quot;</span>);
+mysqlDataSource.setUrl(<span class="hljs-string">&quot;jdbc:mysql://127.0.0.1:3306/quickdao&quot;</span>);
+mysqlDataSource.setUsername(<span class="hljs-string">&quot;root&quot;</span>);
+mysqlDataSource.setPassword(<span class="hljs-string">&quot;123456&quot;</span>);
+QuickDAO.newInstance().dataSource(mysqlDataSource);
+</code></pre>
+<h2 id="&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x7C7B;">&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x7C7B;</h2>
+<p>QuickDAO&#x63D0;&#x4F9B;&#x4E86;&#x626B;&#x63CF;&#x5B9E;&#x4F53;&#x7C7B;&#x548C;&#x8FC7;&#x6EE4;&#x5B9E;&#x4F53;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;</p>
+<ul>
+<li>packageName(&quot;cn.schoolwow.quickdao.entity&quot;);</li>
+</ul>
+<p>&#x626B;&#x63CF;&#x5305;<code>cn.schoolwow.quickdao.entity</code></p>
+<ul>
+<li>packageName(&quot;cn.schoolwow.quickdao.entity&quot;,&quot;t&quot;);</li>
+</ul>
+<p>&#x626B;&#x63CF;&#x5305;<code>cn.schoolwow.quickdao.entity</code>&#x5E76;&#x4E3A;&#x8BE5;&#x5305;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x8868;&#x6DFB;&#x52A0;&#x524D;&#x7F00;<code>t_</code></p>
+<ul>
+<li>ignorePackageName(&quot;cn.schoolwow.quickdao.entity&quot;);</li>
+</ul>
+<p>&#x5FFD;&#x7565;&#x5305;<code>cn.schoolwow.quickdao.entity</code></p>
+<ul>
+<li>ignoreClass(User.class);</li>
+</ul>
+<p>&#x5FFD;&#x7565;User&#x7C7B;</p>
+<ul>
+<li>filter(Predicate<class> predicate);</class></li>
+</ul>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x8FC7;&#x6EE4;&#x65B9;&#x6CD5;</p>
+<h2 id="&#x5176;&#x4ED6;&#x914D;&#x7F6E;">&#x5176;&#x4ED6;&#x914D;&#x7F6E;</h2>
+<ul>
+<li>foreignKey(boolean openForeignKey)  </li>
+</ul>
+<p>&#x662F;&#x5426;&#x5F00;&#x542F;&#x5916;&#x952E;&#x7EA6;&#x675F;</p>
+<ul>
+<li>autoCreateTable(boolean autoCreateTable)  </li>
+</ul>
+<p>&#x662F;&#x5426;&#x81EA;&#x52A8;&#x5EFA;&#x8868;</p>
+<ul>
+<li>autoCreateProperty(boolean autoCreateProperty)   </li>
+</ul>
+<p>&#x662F;&#x5426;&#x81EA;&#x52A8;&#x65B0;&#x589E;&#x5C5E;&#x6027;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="annotation.html" class="navigation navigation-prev " aria-label="Previous page: 实体注解">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dynamicAnnotation.html" class="navigation navigation-next " aria-label="Next page: 动态配置实体注解">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实体扫描","level":"1.3.3","depth":2,"next":{"title":"动态配置实体注解","level":"1.3.4","depth":2,"path":"config/dynamicAnnotation.md","ref":"config/dynamicAnnotation.md","articles":[]},"previous":{"title":"实体注解","level":"1.3.2","depth":2,"path":"config/annotation.md","ref":"config/annotation.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/sunyue1380/QuickDAO3"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sunyue1380","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"QuickDAO3项目文档","language":"zh-hans","gitbook":"3.2.3","description":"QuickDAO3项目文档.QuickDAO是一个Java ORM框架,抛弃MyBatis的大量xml和mapper文件设置,只需要一个dao对象即可完成对数据库的所有操作."},"file":{"path":"config/scan.md","mtime":"2019-11-22T06:38:04.725Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-22T09:30:12.306Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

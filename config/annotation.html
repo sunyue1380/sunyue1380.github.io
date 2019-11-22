@@ -1,0 +1,620 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>实体注解 · QuickDAO3项目文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="sunyue1380">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="scan.html" />
+    
+    
+    <link rel="prev" href="log.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart/README.md">
+            
+                <span>
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../quickstart/start.html">
+            
+                <a href="../quickstart/start.html">
+            
+                    
+                    快速开始
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    配置信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    SQL日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="annotation.html">
+            
+                <a href="annotation.html">
+            
+                    
+                    实体注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="scan.html">
+            
+                <a href="scan.html">
+            
+                    
+                    实体扫描
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="dynamicAnnotation.html">
+            
+                <a href="dynamicAnnotation.html">
+            
+                    
+                    动态配置实体注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="tableNameMapping.html">
+            
+                <a href="tableNameMapping.html">
+            
+                    
+                    实体类名映射
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../select/">
+            
+                <a href="../select/">
+            
+                    
+                    查询操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../select/simple.html">
+            
+                <a href="../select/simple.html">
+            
+                    
+                    简单查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../select/complex.html">
+            
+                <a href="../select/complex.html">
+            
+                    
+                    复杂查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../select/special.html">
+            
+                <a href="../select/special.html">
+            
+                    
+                    特殊查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../select/joinTable.html">
+            
+                <a href="../select/joinTable.html">
+            
+                    
+                    关联查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../select/page.html">
+            
+                <a href="../select/page.html">
+            
+                    
+                    分页排序
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../operate/">
+            
+                <a href="../operate/">
+            
+                    
+                    更新操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../operate/simple.html">
+            
+                <a href="../operate/simple.html">
+            
+                    
+                    简单操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../operate/batch.html">
+            
+                <a href="../operate/batch.html">
+            
+                    
+                    批量操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../operate/buildTable.html">
+            
+                <a href="../operate/buildTable.html">
+            
+                    
+                    建表删表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../transaction/">
+            
+                <a href="../transaction/">
+            
+                    
+                    事务操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../transaction/transaction.html">
+            
+                <a href="../transaction/transaction.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >实体注解</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B9E;&#x4F53;&#x6CE8;&#x89E3;">&#x5B9E;&#x4F53;&#x6CE8;&#x89E3;</h1>
+<p>QuickDAO&#x63D0;&#x4F9B;&#x4E86;&#x5B9E;&#x4F53;&#x6CE8;&#x89E3;&#x7528;&#x4E8E;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;.</p>
+<h2 id="id">@Id</h2>
+<p>&#x6807;&#x8BC6;Id&#x5B57;&#x6BB5;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@Id</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> uid;
+}
+</code></pre>
+<h2 id="columnnamne">@ColumnNamne</h2>
+<p>&#x6620;&#x5C04;&#x5B57;&#x6BB5;&#x540D;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@ColumnName</span>(<span class="hljs-string">&quot;uid&quot;</span>)
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> id;
+}
+</code></pre>
+<h2 id="tablename">@TableName</h2>
+<p>&#x6620;&#x5C04;&#x8868;&#x540D;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@TableName</span>(<span class="hljs-string">&quot;myUser&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+}
+</code></pre>
+<h2 id="columntype">@ColumnType</h2>
+<p>&#x81EA;&#x5B9A;&#x4E49;&#x6570;&#x636E;&#x5E93;&#x7C7B;&#x578B;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@ColumnName</span>(<span class="hljs-string">&quot;varchar(1024)&quot;</span>)
+    <span class="hljs-keyword">private</span> String username;
+}
+</code></pre>
+<h2 id="comment">@Comment</h2>
+<p>&#x6DFB;&#x52A0;&#x6570;&#x636E;&#x5E93;&#x6CE8;&#x91CA;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@Comment</span>(<span class="hljs-string">&quot;&#x7528;&#x6237;&#x540D;&quot;</span>)
+    <span class="hljs-keyword">private</span> String username;
+}
+</code></pre>
+<h2 id="index">@Index</h2>
+<p>&#x5728;&#x8BE5;&#x5B57;&#x6BB5;&#x4E0A;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<blockquote>
+<p>&#x5EFA;&#x8BAE;&#x5728;&#x6709;&#x552F;&#x4E00;&#x6027;&#x7EA6;&#x675F;&#x7684;&#x5B57;&#x6BB5;&#x4E0A;&#x5EFA;&#x7ACB;&#x7D22;&#x5F15;,&#x4EE5;&#x4FBF;&#x52A0;&#x5FEB;&#x68C0;&#x7D22;&#x901F;&#x5EA6;</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@Index</span>
+    <span class="hljs-keyword">private</span> String username;
+}
+</code></pre>
+<h2 id="constraint">@Constraint</h2>
+<p>&#x6DFB;&#x52A0;&#x7EA6;&#x675F;,&#x5305;&#x62EC;&#x662F;&#x5426;&#x975E;&#x7A7A;,&#x662F;&#x5426;&#x552F;&#x4E00;,check&#x7EA6;&#x675F;&#x4EE5;&#x53CA;&#x9ED8;&#x8BA4;&#x503C;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<ul>
+<li>notNull &#x662F;&#x5426;&#x975E;&#x7A7A;,&#x9ED8;&#x8BA4;&#x4E3A;false</li>
+<li>unique &#x662F;&#x5426;&#x552F;&#x4E00;,&#x9ED8;&#x8BA4;&#x4E3A;false</li>
+<li>check check&#x7EA6;&#x675F;,&#x9ED8;&#x8BA4;&#x4E3A;&#x7A7A;</li>
+<li>defaultValue &#x9ED8;&#x8BA4;&#x503C;,&#x9ED8;&#x8BA4;&#x4E3A;&#x4E3A;&#x7A7A;</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{ 
+    <span class="hljs-meta">@Constraint</span>(notNull=<span class="hljs-keyword">true</span>, unique=<span class="hljs-keyword">true</span>)
+    <span class="hljs-keyword">private</span> String username;
+}
+</code></pre>
+<h2 id="foreignkey">@ForeignKey</h2>
+<p>&#x6DFB;&#x52A0;&#x5916;&#x952E;&#x7EA6;&#x675F;,&#x6307;&#x5B9A;&#x5173;&#x8054;&#x5B57;&#x6BB5;&#x4EE5;&#x53CA;&#x5916;&#x952E;&#x5B57;&#x6BB5;&#x66F4;&#x65B0;&#x548C;&#x5220;&#x9664;&#x65F6;&#x7684;&#x7B56;&#x7565;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<ul>
+<li>table &#x5173;&#x8054;&#x5230;&#x54EA;&#x5F20;&#x8868;</li>
+<li>field &#x5173;&#x8054;&#x5230;&#x8868;&#x7684;&#x54EA;&#x4E2A;&#x5B57;&#x6BB5;,&#x9ED8;&#x8BA4;&#x4E3A;id</li>
+<li>foreignKeyOption &#x5916;&#x952E;&#x7EA7;&#x8054;&#x66F4;&#x65B0;&#x7B56;&#x7565;,&#x9ED8;&#x8BA4;&#x4E3A;NOACTION</li>
+</ul>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{ 
+    <span class="hljs-meta">@ForeignKey</span>(table=Address.class,field=<span class="hljs-string">&quot;uid&quot;</span>,foreignKeyOption=ForeignKeyOption.RESTRICT)
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">long</span> addressId;
+}
+</code></pre>
+<h2 id="ignore">@Ignore</h2>
+<p>&#x5FFD;&#x7565;&#x8BE5;&#x7C7B;/&#x5FFD;&#x7565;&#x8BE5;&#x5B57;&#x6BB5;,&#x4F5C;&#x7528;&#x4E8E;&#x7C7B;&#x548C;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;</p>
+<p>&#x5FFD;&#x7565;age&#x5C5E;&#x6027;</p>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-meta">@Ignore</span>
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">int</span> age;
+}
+</code></pre>
+<p>&#x5FFD;&#x7565;Address&#x7C7B;</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Ignore</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Address</span></span>{
+}
+</code></pre>
+<blockquote>
+<p>QuickDAO&#x4F1A;&#x81EA;&#x52A8;&#x5FFD;&#x7565;&#x5B9E;&#x4F53;&#x7C7B;&#x4E2D;&#x96C6;&#x5408;&#x7C7B;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x4EE5;&#x53CA;&#x5B9E;&#x4F53;&#x7C7B;&#x6210;&#x5458;&#x53D8;&#x91CF;</p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">User</span></span>{
+    <span class="hljs-keyword">private</span> Address address;
+    <span class="hljs-keyword">private</span> List&lt;Long&gt; userIds;
+    <span class="hljs-comment">//&#x4EE5;&#x4E0A;&#x5C5E;&#x6027;&#x5747;&#x4E3A;&#x81EA;&#x52A8;&#x88AB;QuickDAO&#x6240;&#x5FFD;&#x7565;</span>
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="log.html" class="navigation navigation-prev " aria-label="Previous page: SQL日志">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="scan.html" class="navigation navigation-next " aria-label="Next page: 实体扫描">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"实体注解","level":"1.3.2","depth":2,"next":{"title":"实体扫描","level":"1.3.3","depth":2,"path":"config/scan.md","ref":"config/scan.md","articles":[]},"previous":{"title":"SQL日志","level":"1.3.1","depth":2,"path":"config/log.md","ref":"config/log.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/sunyue1380/QuickDAO3"},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"sunyue1380","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"QuickDAO3项目文档","language":"zh-hans","gitbook":"3.2.3","description":"QuickDAO3项目文档.QuickDAO是一个Java ORM框架,抛弃MyBatis的大量xml和mapper文件设置,只需要一个dao对象即可完成对数据库的所有操作."},"file":{"path":"config/annotation.md","mtime":"2019-11-22T06:09:37.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-22T09:30:12.306Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
